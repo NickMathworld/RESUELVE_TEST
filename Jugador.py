@@ -19,7 +19,7 @@ class Jugador:
 	def obtener_JSON(self):
 		data = {}
 		data["nombre"] = self.nombre
-		data["nivel"] = self.nivel
+		data["goles_minimo"] = self.goles_meta
 		data["goles"] = self.goles
 		data["sueldo"] = self.sueldo
 		data["bono"] = self.bono
