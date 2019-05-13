@@ -64,3 +64,31 @@ Abrimos el archivo data_test, en el que ahí pegaremos el caso de prueba para qu
 * goles: Debe  ser tipo numérico,
 * sueldo: Debe ser tipo numérico,
 * bono: Debe ser tipo numérico,
+#### Para ejecutar las pruebas unitarias se debe de ejecutar con el siguiente comando
+      python -m doctest -v test.py
+####
+Dando como resultado
+####
+      Trying:
+          calcula_sueldos("data_in")
+      Expecting:
+          'OK'
+      ok
+      Trying:
+          calcula_sueldos("data_error")
+      Expecting:
+          'ERROR AL VALIDAR JSON'
+      ok
+      Trying:
+          calcula_sueldos("data_error_noexiste")
+      Expecting:
+          'ERROR AL ABRIR ARCHIVO JSON'
+      ok
+      2 items had no tests:
+          test
+          test.crea_jugador
+      1 items passed all tests:
+         3 tests in test.calcula_sueldos
+      3 tests in 3 items.
+      3 passed and 0 failed.
+      Test passed.
